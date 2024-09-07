@@ -25,7 +25,7 @@ async def hello_world(path: str, request: Request):
     body_str = body_bytes.decode('utf-8')
 
     response_content = {
-        "msg": "Hello, World!" + " at " + arrow.now().format("YYYY-MM-DD HH:mm:ss"),
+        "msg": "Hello, World2!" + " at " + arrow.now().format("YYYY-MM-DD HH:mm:ss"),
         "request": {
             "query": str(request.query_params),
             "path": path,
